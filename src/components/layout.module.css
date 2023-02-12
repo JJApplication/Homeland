@@ -1,0 +1,41 @@
+.container {
+    max-width: 36rem;
+    padding: 0 1rem;
+    margin: 3rem auto 6rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+    margin: -2rem -4rem 0;
+    padding: 2rem 1rem;
+    box-shadow: 0 8px 12px 4px #e1e2e3;
+}
+
+.backToHome {
+    margin: 3rem 0 0;
+    position: fixed;
+    bottom: 4rem;
+    left: 2rem;
+    font-size: 1.25rem;
+    z-index: 999;
+}
+
+.body {
+    padding: 2rem 4rem;
+}
+
+.footer {
+    width: calc(100% - 8rem);
+    position: fixed;
+    bottom: 0;
+    font-weight: bold;
+    font-size: .95rem;
+    margin: 0 auto;
+    text-align: center;
+    color: #91a1ff;
+    background-color: #fff;
+    padding: 0;
+}

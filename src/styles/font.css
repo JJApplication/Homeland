@@ -1,0 +1,5 @@
+@font-face {
+    font-family: 'jjfont';
+    font-display: fallback;
+    src: url("../font/LXGWWenKai-Regular.woff2") format("woff");
+}
