@@ -4,9 +4,6 @@ import React, { useEffect, useState } from 'react';
 import  { SwapLeftOutlined } from '@ant-design/icons';
 import Header from "./Header";
 
-const name = 'Landers'
-export const siteTitle = 'The Renj'
-
 export default function Layout({ children, home }: {
   children: React.ReactNode
   home?: boolean
@@ -21,12 +18,12 @@ export default function Layout({ children, home }: {
 
   return (
     <ConfigProvider theme={{
-      algorithm: theme.defaultAlgorithm,
+      algorithm: theme.darkAlgorithm,
     }}>
       <div>
         <Header />
         { loading
-          ? <Skeleton  avatar active paragraph={{ rows: 10 }} style={{padding: '2rem'}}/>
+          ? <Skeleton avatar active paragraph={{ rows: 10 }} style={{padding: '2rem'}}/>
           : (<div className={styles.body}>
             <main>{children}</main>
             {!home && (

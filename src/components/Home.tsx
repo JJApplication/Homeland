@@ -1,13 +1,20 @@
 import Layout from './Layout'
 import utilStyles from '../styles/utils.module.css'
-import { QRCode, theme, Divider, Col, Row, Button, Space, Timeline, message } from 'antd';
+import { QRCode, theme, Divider, Col, Row, Button, Timeline, message, Card } from 'antd';
 import styles from "./layout.module.css";
 import profile from "../assets/profile.jpg";
 import React from "react";
+import useTypewriter from "../lib/typer";
 import TimelineSite from "../lib/timeline_site";
 import TimelineWork from "../lib/timeline_work";
+import './Home.css';
 
 const { useToken } = theme;
+const welcomeText = '$ 🐼 Hello, my name is Landers<br>' +
+  '$ 👉 Follow me on [Github] <a href="https://github.com/landers1037">https://github.com/landers1037</a><br>' +
+  '$ 👀 View my site on <a href="http://renj.io">http://renj.io</a><br>' +
+  '$ 📧 Mail to me [Gmail] <a href="mailto:liaorenj@gmail.com">liaorenj@gmail.com</a>'
+
 // 首页
 export default function Home() {
   const [messageApi, contextHolder] = message.useMessage();
@@ -34,6 +41,10 @@ export default function Home() {
           这是我的个人主页, 我是一名普普通通的Coder, 请高抬贵眼👉这是我的<a href="http://me.renj.io">简历</a>
         </p>
       </section>
+      <Divider />
+      <Card title=">/" bordered={true} style={{ width: '100%' }}>
+        <div className="shell" dangerouslySetInnerHTML={{ __html: useTypewriter(welcomeText, 50) || '.' }}></div>
+      </Card>
       <Divider />
       <Row className="ant-over">
         <Col lg={4} md={6} xs={24} sm={10} style={{margin: '0.5rem'}}>

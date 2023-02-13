@@ -8,10 +8,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f2f2f2;
+    background-color: #1c1c1c;
     margin: -2rem -4rem 0;
-    padding: 2rem 1rem;
-    box-shadow: 0 8px 12px 4px #e1e2e3;
+    padding: 4rem 1rem;
 }
 
 .backToHome {
@@ -36,6 +35,6 @@
     margin: 0 auto;
     text-align: center;
     color: #91a1ff;
-    background-color: #fff;
+    background-color: rgb(20, 20, 20);
     padding: 0;
 }

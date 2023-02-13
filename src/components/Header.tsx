@@ -33,6 +33,10 @@ const items: MenuProps['items'] = [
         label: 'JJApplication',
         children: [
           {
+            label: <a href="/works/jjapplication">JJApp</a>,
+            key: 'jjapp',
+          },
+          {
             label: 'Fushin',
             key: '#fushin',
           },
@@ -54,16 +58,6 @@ const items: MenuProps['items'] = [
           },
         ],
       },
-      {
-        type: 'group',
-        label: 'GeekFW',
-        children: [
-          {
-            label: 'Killer',
-            key: '#killer',
-          }
-        ],
-      },
     ],
   },
   {
@@ -71,23 +65,23 @@ const items: MenuProps['items'] = [
     key: 'pages',
     children: [
       {
-        label: <a href="http://mgek.cc">Mgek Works</a>,
+        label: <a href="http://mgek.cc" target="_blank" rel="noopener noreferrer">Mgek Works</a>,
         key: '@http://mgek.cc',
       },
       {
-        label: <a href="https://blog.renj.io">Blog</a>,
+        label: <a href="https://blog.renj.io" target="_blank" rel="noopener noreferrer">Blog</a>,
         key: '@https://blog.renj.io',
       },
       {
-        label: <a href="http://page.renj.io">Site(deprecated)</a>,
+        label: <a href="http://page.renj.io" target="_blank" rel="noopener noreferrer">Site(deprecated)</a>,
         key: '@http://page.renj.io',
       },
       {
-        label: <a href="http://service.renj.io">Apollo</a>,
+        label: <a href="http://service.renj.io" target="_blank" rel="noopener noreferrer">Apollo</a>,
         key: '@http://service.renj.io',
       },
       {
-        label: <a href="http://doc.mgek.cc">Online Docs</a>,
+        label: <a href="http://doc.mgek.cc" target="_blank" rel="noopener noreferrer">Online Docs</a>,
         key: '@http://doc.mgek.cc',
       },
     ],

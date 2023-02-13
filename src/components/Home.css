@@ -1,0 +1,9 @@
+.bg {
+    position: relative;
+}
+
+.shell {
+    color: #66ff2e;
+    font-family: 'monospace', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    font-size: 0.9rem;
+}

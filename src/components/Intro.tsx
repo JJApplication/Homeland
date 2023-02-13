@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from './Layout'
-import { List, Divider } from 'antd';
+import List from 'antd/lib/list';
+import Divider from 'antd/lib/divider';
 import list from "../lib/list";
 
 export default function Intro() {

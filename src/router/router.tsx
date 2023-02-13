@@ -7,8 +7,8 @@ import {
 } from "react-router-dom";
 import Home from "../components/Home";
 import Intro from "../components/Intro";
-import { App } from "antd";
 import About from "../components/About";
+import JJApplication from "../works/JJApplication";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />
+  },
+  {
+    path: '/works/jjapplication',
+    element: <JJApplication />
   }
 ]);
 
