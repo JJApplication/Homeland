@@ -7,7 +7,7 @@ import list from "../lib/list";
 export default function Intro() {
   return (
     <Layout>
-      <div style={{fontSize: '1.2rem'}}>
+      <div style={{ fontSize: '1.2rem' }}>
         <p>
           你好，我是Landers，来自HUST(华中科技大学)🌎
         </p>
@@ -18,7 +18,7 @@ export default function Intro() {
           目前就读于EIC，正在努力向CS奋斗，鲁迅说过:“通向成功没有捷径只有不断努力奋斗”。热衷于自己喜爱的事业，向往的生活才会向你抛出橄榄枝，一起努力加油！
         </p>
 
-        <Divider />
+        <Divider/>
 
         <h4>update 2023</h4>
 
@@ -26,17 +26,16 @@ export default function Intro() {
 
         <List
           className="ant-over"
-          header={<h4>你还可以在这些地方找到我</h4>}
+          header={<h3 style={{ color: '#fff' }}>你还可以在这些地方找到我</h3>}
           dataSource={list}
           renderItem={(item) => {
-            return <List.Item>
-              <a href={item.url}>{item.title}</a>
-            </List.Item>            }
+            return (
+              <List.Item>
+                <a href={item.url}>{item.title}</a>
+              </List.Item>)}
           }
         >
-
         </List>
-
       </div>
     </Layout>
   )

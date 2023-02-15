@@ -1,5 +1,6 @@
 import React from "react";
 import './works.css';
+import './style.css';
 
 export default function WorkLayout({name, children}: {
   name: string,
@@ -11,7 +12,7 @@ export default function WorkLayout({name, children}: {
         <span className="head">{name}</span>
       </div>
 
-      <main>{children}</main>
+      <main className="markdown-body">{children}</main>
     </div>
   )
 }

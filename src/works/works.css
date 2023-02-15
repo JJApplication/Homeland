@@ -1,14 +1,14 @@
 .works {
-
+    padding-bottom: 2rem;
 }
 
 .head {
     position: relative;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: bold;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.75rem;
     color: #ffffff;
     border-radius: 1.25rem;
     user-select: none;
-    background-color: #91a1ff;
+    background-color: #0070f3;
 }

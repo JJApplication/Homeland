@@ -20,7 +20,7 @@ export default function Layout({ children, home }: {
     <ConfigProvider theme={{
       algorithm: theme.darkAlgorithm,
     }}>
-      <div>
+      <div style={{ paddingBottom: '2rem' }}>
         <Header />
         { loading
           ? <Skeleton avatar active paragraph={{ rows: 10 }} style={{padding: '2rem'}}/>
