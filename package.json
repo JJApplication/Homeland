@@ -13,10 +13,16 @@
     "@babel/core": "^7.20.12",
     "@babel/preset-react": "^7.18.6",
     "antd": "^5.2.0",
+    "domhandler": "^5.0.3",
+    "front-matter": "^4.0.2",
+    "highlight.js": "^11.7.0",
+    "htmlparser2": "^8.0.1",
+    "markdown-it": "^13.0.1",
+    "markdown-it-linkify-images": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.1",
-    "vite-plugin-markdown": "^2.1.0"
+    "rollup": "^3.16.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

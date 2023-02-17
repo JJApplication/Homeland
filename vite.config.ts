@@ -1,11 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
-import { plugin as mdPlugin, Mode } from 'vite-plugin-markdown'
+import { plugin as mdPlugin, Mode } from './plugin-markdown/index';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), mdPlugin({
-    mode: [Mode.REACT]
+    mode: [Mode.HTML],
   })],
   build: {
     rollupOptions: {

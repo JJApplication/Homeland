@@ -12,3 +12,26 @@
     user-select: none;
     background-color: #0070f3;
 }
+
+.img {
+    border-radius: 0.25rem;
+    border: none;
+}
+
+.top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    border: none;
+    z-index: 999;
+}
+
+@media (max-width: 720px) {
+    .top {
+        right: 1rem;
+    }
+}
+
+.top:hover {
+    background-color: #2f2f2f;
+}

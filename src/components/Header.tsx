@@ -19,12 +19,8 @@ const items: MenuProps['items'] = [
         label: 'Mgek',
         children: [
           {
-            label: 'ImgHost',
-            key: '#imghost',
-          },
-          {
-            label: 'Pan',
-            key: '#pan',
+            label: <a href="/works/mgek">Mgek APP</a>,
+            key: 'mgekapp',
           },
         ],
       },
@@ -37,23 +33,23 @@ const items: MenuProps['items'] = [
             key: 'jjapp',
           },
           {
-            label: 'Fushin',
+            label: <a href="/works/fushin">Fushin</a>,
             key: '#fushin',
           },
           {
-            label: 'Apollo',
+            label: <a href="/works/apollo">Apollo</a>,
             key: '#apollo',
           },
           {
-            label: 'OctopusTree',
+            label: <a href="/works/octopus">OctopusTree</a>,
             key: '#octopus',
           },
           {
-            label: 'NoEngine',
+            label: <a href="/works/noengine">NoEngine</a>,
             key: '#noengine',
           },
           {
-            label: 'Sandwich',
+            label: <a href="/works/sandwich">Sandwich</a>,
             key: '#sandwich',
           },
         ],
@@ -83,6 +79,14 @@ const items: MenuProps['items'] = [
       {
         label: <a href="http://doc.mgek.cc" target="_blank" rel="noopener noreferrer">Online Docs</a>,
         key: '@http://doc.mgek.cc',
+      },
+      {
+        label: <a href="https://github.com/jjapplication" target="_blank" rel="noopener noreferrer">JJApp Organization</a>,
+        key: '@jjapplication',
+      },
+      {
+        label: <a href="https://github.com/geekfw" target="_blank" rel="noopener noreferrer">GeekFW Organization</a>,
+        key: '@geekfw',
       },
     ],
   },

@@ -2,13 +2,17 @@
 import Layout from './Layout'
 import utilStyles from '../styles/utils.module.css'
 import { Divider } from "antd";
+import logo from "../assets/logo.svg";
+import React from "react";
 
+const logoStyle = {width: 128, display: 'inline-block', margin: '0.5rem', borderRadius: '50%'}
 // 首页
 export default function About() {
   return (
     <Layout>
-      <section className={utilStyles.headingMd}>
+      <section className={utilStyles.headingMd} style={{textAlign: 'center'}}>
         <h3>关于</h3>
+        <img src={logo} style={logoStyle}  alt="logo" />
         <p>不过是个写代码的罢了..</p>
         <p>
           我的steam账户: <a href="https://steamcommunity.com/id/hotwaterman">Hotwaterman</a>
@@ -18,6 +22,9 @@ export default function About() {
         </p>
         <p>
           我的电报: <a href="https://t.me/Greatpipi">Telegram</a>
+        </p>
+        <p>
+          字体由<a href="https://lxgw.github.io/2021/01/28/Klee-Simpchin/">霞鹜文楷</a>提供
         </p>
         <div style={{marginTop: '2rem', fontWeight: 'bold', fontSize: '1.1rem', textAlign: 'center'}}>
           <p>

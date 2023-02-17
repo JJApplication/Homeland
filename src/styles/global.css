@@ -41,6 +41,10 @@ img {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif!important;
 }
 
+.ant-list-split .ant-list-item {
+    border-block-end: 1px solid #4f4f4f;
+}
+
 .btn-back:hover {
     width: 50px!important;
     height: 50px!important;

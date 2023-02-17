@@ -22,12 +22,13 @@ export default function Intro() {
 
         <h4>update 2023</h4>
 
-        目前就职于华为, 是一名web开发工程师
+        <p>目前就职于华为, 是一名web开发工程师</p>
 
         <List
           className="ant-over"
           header={<h3 style={{ color: '#fff' }}>你还可以在这些地方找到我</h3>}
           dataSource={list}
+          split
           renderItem={(item) => {
             return (
               <List.Item>
