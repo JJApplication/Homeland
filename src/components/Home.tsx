@@ -34,11 +34,11 @@ export default function Home() {
           width={192}
           onClick={thanks}
          alt="profile"/>
-        <h1 className={utilStyles.heading2Xl}>Landers</h1>
+        <h1 className={utilStyles.heading2Xl}>Don't try so hard, the best things come when you least expect them to.</h1>
       </header>
       <section className={utilStyles.headingMd}>
-        <p>😍你好, 我是Landers<br/>
-          这是我的个人主页, 我是一名普普通通的Coder, 请高抬贵眼👉这是我的<a href="http://me.renj.io">简历</a>
+        <p>🙂Hello, I'm Landers<br/>
+          This is my homepage, I'm a Coder and a Security-tester, this is my 👉<a href="http://me.renj.io">CV</a>
         </p>
       </section>
       <Divider />
@@ -66,7 +66,7 @@ export default function Home() {
       <section style={{paddingBottom: '2rem'}}>
         <Row className="ant-over">
           <Col className="ant-over" span={12} md={12} xs={24} sm={24}>
-            <h3>时间线</h3>
+            <h3>Timeline</h3>
             <Timeline
               className="ant-over"
               style={{ fontWeight: 'bold' }}
@@ -74,7 +74,7 @@ export default function Home() {
             />
           </Col>
           <Col className="ant-over" span={12} md={12} xs={24} sm={24}>
-            <h3>工作经历</h3>
+            <h3>Work Experience</h3>
             <Timeline
               className="ant-over"
               style={{ fontWeight: 'bold' }}

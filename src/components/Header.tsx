@@ -7,11 +7,11 @@ const items: MenuProps['items'] = [
     key: '/',
   },
   {
-    label: <a href="/intro">介绍</a>,
+    label: <a href="/intro">Intro</a>,
     key: 'intro',
   },
   {
-    label: '项目',
+    label: 'Project',
     key: 'works',
     children: [
       {
@@ -57,7 +57,7 @@ const items: MenuProps['items'] = [
     ],
   },
   {
-    label: '页面',
+    label: 'Pages',
     key: 'pages',
     children: [
       {
@@ -91,7 +91,7 @@ const items: MenuProps['items'] = [
     ],
   },
   {
-    label: <a href="/about">关于</a>,
+    label: <a href="/about">About</a>,
     key: 'about',
   },
   {

@@ -20,10 +20,10 @@ export default function Layout({ children, home }: {
     <ConfigProvider theme={{
       algorithm: theme.darkAlgorithm,
     }}>
-      <div style={{ paddingBottom: '2rem' }}>
+      <div style={{ paddingBottom: '2rem', maxWidth: '1280px', margin: '0 auto' }}>
         <Header />
         { loading
-          ? <Skeleton avatar active paragraph={{ rows: 10 }} style={{padding: '2rem'}}/>
+          ? <Skeleton avatar active paragraph={{ rows: 20 }} style={{padding: '2rem'}}/>
           : (<div className={styles.body}>
             <main>{children}</main>
             {!home && (

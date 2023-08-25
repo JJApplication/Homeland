@@ -8,25 +8,25 @@ export default function Intro() {
   return (
     <Layout>
       <div style={{ fontSize: '1.2rem' }}>
-        <p>
-          你好，我是Landers，来自HUST(华中科技大学)🌎
+        <p style={{ margin: '1.5rem 0' }}>
+          Hello, I'm Landers from HUST(HuaZhong University of sci&tech.)🌎
         </p>
-        <p>
-          这里是我记录学习点滴，放松身心，享受乐趣的地方，感谢你的到来！
+        <p style={{ margin: '1.5rem 0' }}>
+          This is where I record my learning, relax and have fun, thank you for visiting！
         </p>
-        <p>
-          目前就读于EIC，正在努力向CS奋斗，鲁迅说过:“通向成功没有捷径只有不断努力奋斗”。热衷于自己喜爱的事业，向往的生活才会向你抛出橄榄枝，一起努力加油！
+        <p style={{ margin: '1.5rem 0' }}>
+          Studied at the School of Electronic Information and Communication Engineering.
         </p>
 
         <Divider/>
 
-        <h4>update 2023</h4>
+        <h4 style={{ color: '#83fa71' }}>update 2023</h4>
 
-        <p>目前就职于华为, 是一名web开发工程师</p>
+        <p style={{ margin: '1.5rem 0' }}>Currently working at Huawei Technologies Co., Ltd. as a Coder.</p>
 
         <List
           className="ant-over"
-          header={<h3 style={{ color: '#fff' }}>你还可以在这些地方找到我</h3>}
+          header={<h3 style={{ color: '#fff' }}>Where you can find me.</h3>}
           dataSource={list}
           split
           renderItem={(item) => {

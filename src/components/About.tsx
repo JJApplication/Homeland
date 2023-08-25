@@ -2,7 +2,6 @@
 import Layout from './Layout'
 import utilStyles from '../styles/utils.module.css'
 import { Divider } from "antd";
-import logo from "../assets/logo.svg";
 import React from "react";
 
 const logoStyle = {width: 128, display: 'inline-block', margin: '0.5rem', borderRadius: '50%'}
@@ -11,22 +10,22 @@ export default function About() {
   return (
     <Layout>
       <section className={utilStyles.headingMd} style={{textAlign: 'center'}}>
-        <h3>关于</h3>
-        <img src={logo} style={logoStyle}  alt="logo" />
-        <p>不过是个写代码的罢了..</p>
+        <h3>About</h3>
+
+        <p>Just a programmer ...</p>
         <p>
-          我的steam账户: <a href="https://steamcommunity.com/id/hotwaterman">Hotwaterman</a>
+          My Steam Account: <a href="https://steamcommunity.com/id/hotwaterman">Hotwaterman</a>
         </p>
         <p>
-          我的邮箱: <a href="mailto:liaorenj@gmail.com">liaorenj@gmail.com</a>
+          My Email: <a href="mailto:liaorenj@gmail.com">liaorenj@gmail.com</a>
         </p>
         <p>
-          我的电报: <a href="https://t.me/Greatpipi">Telegram</a>
+          My Telegram: <a href="https://t.me/Greatpipi">Telegram</a>
         </p>
-        <p>
+        <p className="verse">
           字体由<a href="https://lxgw.github.io/2021/01/28/Klee-Simpchin/">霞鹜文楷</a>提供
         </p>
-        <div style={{marginTop: '2rem', fontWeight: 'bold', fontSize: '1.1rem', textAlign: 'center'}}>
+        <div className="verse" style={{marginTop: '2rem', fontWeight: 'bold', fontSize: '1.1rem', textAlign: 'center'}}>
           <p>
             卷帘天自高，海水摇空绿。
           </p>
@@ -38,7 +37,7 @@ export default function About() {
           </p>
         </div>
         <Divider>
-          <p>由<a href="https://cn.vitejs.dev">Vite</a> & <a href="https://ant.design">Antd</a>驱动</p>
+          <p>Powered by <a href="https://cn.vitejs.dev">Vite</a> & <a href="https://ant.design">Antd</a></p>
         </Divider>
       </section>
     </Layout>

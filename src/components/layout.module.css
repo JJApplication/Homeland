@@ -33,14 +33,14 @@
 }
 
 .footer {
-    width: calc(100% - 8rem);
+    width: 100%;
     position: fixed;
     bottom: 0;
     font-weight: bold;
     font-size: .95rem;
-    margin: 0 auto;
     text-align: center;
     color: #91a1ff;
     background-color: rgb(20, 20, 20);
     padding: 0;
+    left: 0;
 }
