@@ -32,6 +32,12 @@
     padding: 2rem 4rem;
 }
 
+@media (max-width: 480px) {
+    .body {
+        padding: 2rem;
+    }
+}
+
 .footer {
     width: 100%;
     position: fixed;
