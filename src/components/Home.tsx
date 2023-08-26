@@ -37,8 +37,8 @@ export default function Home() {
         <h1 className={utilStyles.heading2Xl}>Don't try so hard, the best things come when you least expect them to.</h1>
       </header>
       <section className={utilStyles.headingMd}>
-        <p>🙂Hello, I'm Landers<br/>
-          This is my homepage, I'm a Coder and a Security-tester, this is my 👉<a href="http://me.renj.io">CV</a>
+        <p>Hello, I'm Landers 🙂<br/>
+          A developer and Security engineer. 👉 <a href="http://me.renj.io">CV</a> is attached.
         </p>
       </section>
       <Divider />
