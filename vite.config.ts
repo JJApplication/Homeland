@@ -10,15 +10,11 @@ export default defineConfig({
       mode: [Mode.HTML],
     }),
   ],
-  // build: {
-  //   rollupOptions: {
-  //     output: {
-  //       manualChunks: {
-  //         react: ['react'],
-  //         react_dom: ['react-dom'],
-  //         react_router: ['react-router-dom'],
-  //       }
-  //     }
-  //   }
-  // }
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {}
+      }
+    }
+  }
 })
