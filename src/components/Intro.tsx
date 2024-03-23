@@ -1,31 +1,33 @@
 import React from "react";
 import Layout from './Layout'
-import { Divider, List } from 'antd';
+import { Divider, List, Typography  } from 'antd';
 import list from "../lib/list";
+import { i18n } from "../lib/18n/18n";
 
 export default function Intro() {
+  const { Title, Paragraph, Text, Link } = Typography;
   return (
     <Layout>
       <div style={{ fontSize: '1.2rem' }}>
-        <p style={{ margin: '1.5rem 0' }}>
-          Hello, I'm Landers from HUST(HuaZhong University of sci&tech.)🌎
-        </p>
-        <p style={{ margin: '1.5rem 0' }}>
-          This is a place where I record my study, relaxation, and enjoyment. Welcome!
-        </p>
-        <p style={{ margin: '1.5rem 0' }}>
-          Graduated from School of Electronic Information and Communications, HUST.
-        </p>
-
+        <Paragraph style={{ margin: '1rem 0', fontSize: '1.25rem' }}>
+          {i18n('intro1')}
+        </Paragraph>
+        <Paragraph style={{ margin: '1rem 0', fontSize: '1.25rem' }}>
+          {i18n('intro2')}
+          <br/>
+          <Text strong style={{ margin: '2rem 0', fontSize: '.85rem' }}>
+            {i18n('intro3')}
+          </Text>
+        </Paragraph>
         <Divider/>
 
-        <h4 style={{ color: '#83fa71' }}>update 2023</h4>
-
-        <p style={{ margin: '1.5rem 0' }}>Work in Huawei Technologies Co., Ltd. as a developer.</p>
-
+        <Title level={3} style={{ color: '#0f9800' }}>{i18n('update2023')}</Title>
+        <Text style={{ margin: '1.5rem 0', fontSize: '1.25rem' }}>{i18n('update1')}</Text>
+        <Title level={3} style={{ color: '#0f9800' }}>{i18n('update2024')}</Title>
+        <Text style={{ margin: '1.5rem 0', fontSize: '1.25rem' }}>{i18n('update2')}</Text>
         <List
           className="ant-over"
-          header={<h3 style={{ color: '#fff' }}>Where you can find me.</h3>}
+          header={<Title level={3}>{i18n('find')}</Title>}
           dataSource={list}
           split
           renderItem={(item) => {

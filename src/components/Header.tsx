@@ -1,5 +1,6 @@
 import { Menu, MenuProps } from "antd";
 import React from "react";
+import { i18n } from "../lib/18n/18n";
 
 const items: MenuProps['items'] = [
   {
@@ -7,11 +8,11 @@ const items: MenuProps['items'] = [
     key: '/',
   },
   {
-    label: <a href="/intro">Intro</a>,
+    label: <a href="/intro">{i18n('intro')}</a>,
     key: 'intro',
   },
   {
-    label: 'Project',
+    label: i18n('project'),
     key: 'works',
     children: [
       {
@@ -57,7 +58,7 @@ const items: MenuProps['items'] = [
     ],
   },
   {
-    label: 'Pages',
+    label: i18n('pages'),
     key: 'pages',
     children: [
       {
@@ -91,7 +92,7 @@ const items: MenuProps['items'] = [
     ],
   },
   {
-    label: <a href="/about">About</a>,
+    label: <a href="/about">{i18n('about')}</a>,
     key: 'about',
   },
   {

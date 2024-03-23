@@ -1,43 +1,43 @@
 // 关于页面
 import Layout from './Layout'
 import utilStyles from '../styles/utils.module.css'
-import { Divider } from "antd";
+import { Divider, Typography } from "antd";
 import React from "react";
+import { i18n } from "../lib/18n/18n";
 
 const logoStyle = {width: 128, display: 'inline-block', margin: '0.5rem', borderRadius: '50%'}
 // 首页
 export default function About() {
+  const { Title, Paragraph, Text, Link } = Typography;
+
   return (
     <Layout>
       <section className={utilStyles.headingMd} style={{textAlign: 'center'}}>
-        <h3>About</h3>
+        <Title level={2}>{i18n('about')}</Title>
+        <Paragraph style={{ fontSize: '1rem' }}>{i18n('about1')}</Paragraph>
 
-        <p>Just a programmer ...</p>
-        <p>
-          My Steam Account: <a href="https://steamcommunity.com/id/hotwaterman">Hotwaterman</a>
-        </p>
-        <p>
-          My Email: <a href="mailto:liaorenj@gmail.com">liaorenj@gmail.com</a>
-        </p>
-        <p>
-          My Telegram: <a href="https://t.me/Greatpipi">Telegram</a>
-        </p>
-        <p className="verse">
-          字体由<a href="https://lxgw.github.io/2021/01/28/Klee-Simpchin/">霞鹜文楷</a>提供
-        </p>
-        <div className="verse" style={{marginTop: '2rem', fontWeight: 'bold', fontSize: '1.1rem', textAlign: 'center'}}>
-          <p>
+        <Paragraph style={{ fontSize: '1.25rem' }}>
+          {i18n('steam')}: <a href="https://steamcommunity.com/id/hotwaterman">Hotwaterman</a>
+        </Paragraph>
+        <Paragraph style={{ fontSize: '1.25rem' }}>
+          {i18n('email')}: <a href="mailto:liaorenj@gmail.com">liaorenj@gmail.com</a>
+        </Paragraph>
+        <Paragraph style={{ fontSize: '1.25rem' }}>
+          {i18n('telegram')}: <a href="https://t.me/Greatpipi">Telegram</a>
+        </Paragraph>
+        <div className="verse" style={{marginTop: '2rem', fontWeight: 'bold', textAlign: 'center'}}>
+          <Paragraph className="verse" style={{ fontSize: '1.25rem' }}>
             卷帘天自高，海水摇空绿。
-          </p>
-          <p>
+          </Paragraph>
+          <Paragraph className="verse" style={{ fontSize: '1.25rem' }}>
             海水梦悠悠，君愁我亦愁。
-          </p>
-          <p>
+          </Paragraph>
+          <Paragraph className="verse" style={{ fontSize: '1.25rem' }}>
             南风知我意，吹梦到西洲。
-          </p>
+          </Paragraph>
         </div>
         <Divider>
-          <p>Powered by <a href="https://cn.vitejs.dev">Vite</a> & <a href="https://ant.design">Antd</a></p>
+          <Paragraph>Powered by <a href="https://cn.vitejs.dev">Vite</a> & <a href="https://ant.design">Antd</a></Paragraph>
         </Divider>
       </section>
     </Layout>
