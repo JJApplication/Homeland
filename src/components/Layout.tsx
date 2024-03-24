@@ -1,10 +1,9 @@
-// @ts-nocheck
 import styles from './layout.module.css'
 import { ConfigProvider, Skeleton, Button, FloatButton } from 'antd'
 import React, { useEffect, useState } from 'react';
 import  { SwapLeftOutlined, MoonOutlined, SunOutlined, TranslationOutlined } from '@ant-design/icons';
 import Header from "./Header";
-import { getMode, themeMap, updateMode } from "../lib/theme";
+import { getMode, themeMap, ThemeMode, themeToken, updateMode } from "../lib/theme";
 import { updateI18n } from "../lib/18n/18n";
 
 export default function Layout({ children, home }: {
@@ -13,6 +12,8 @@ export default function Layout({ children, home }: {
 }) {
   const [loading, setLoading] = useState(true);
   const [useTheme, switchTheme] = useState(getMode());
+  const token = themeToken(useTheme);
+  const [globalBg, setGlobalBg] = useState(token.colorBgGlobal);
 
   useEffect(() => {
     setTimeout(() => {
@@ -23,9 +24,9 @@ export default function Layout({ children, home }: {
 
   const renderThemeButton = () => {
     switch (useTheme) {
-      case 'light':
+      case ThemeMode.Light:
         return <MoonOutlined />
-      case 'night':
+      case ThemeMode.Night:
         return <SunOutlined />
       default:
         return <SunOutlined />
@@ -33,12 +34,14 @@ export default function Layout({ children, home }: {
   }
 
   const changeTheme = () => {
-    if (useTheme === 'light') {
-      switchTheme('night')
-      updateMode('night')
-    } else if (useTheme === 'night') {
-      switchTheme('light')
-      updateMode('light')
+    if (useTheme === ThemeMode.Light) {
+      switchTheme(ThemeMode.Night)
+      setGlobalBg(themeToken(ThemeMode.Night).colorBgGlobal)
+      updateMode(ThemeMode.Night)
+    } else {
+      switchTheme(ThemeMode.Light)
+      setGlobalBg(themeToken(ThemeMode.Light).colorBgGlobal)
+      updateMode(ThemeMode.Light)
     }
   }
 
@@ -48,11 +51,10 @@ export default function Layout({ children, home }: {
     window.location.reload();
   }
 
-  // @ts-ignore
   return (
       // @ts-ignore
-    <ConfigProvider theme={{token: themeMap[useTheme]}}>
-      <div style={{ backgroundColor: themeMap[useTheme].colorBgGlobal, height: '100%', overflowY: 'auto' }}>
+    <ConfigProvider theme={{token: themeToken(useTheme)}}>
+      <div style={{ backgroundColor: globalBg, height: '100%', overflowY: 'auto' }}>
         <div style={{ paddingBottom: '2rem', maxWidth: '1280px', margin: '0 auto' }}>
           <div>
             <>
@@ -71,8 +73,8 @@ export default function Layout({ children, home }: {
                     </div>
                 )}
 
-                <div className={styles.footer} style={{ backgroundColor: themeMap[useTheme].colorBgGlobal }}>
-                  <p>须知少时凌云志, 曾许人间第一流 <a href="http://renj.io">@renj.io</a></p>
+                <div className={styles.footer} style={{ backgroundColor: globalBg }}>
+                  <p>须知少时凌云志, 曾许人间第一流 <a href="https://renj.io">@renj.io</a></p>
                 </div>
               </div>) }
         </div>

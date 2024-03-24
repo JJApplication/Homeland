@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import { Divider, Typography } from "antd";
 import React from "react";
 import { i18n } from "../lib/18n/18n";
+import links from "../lib/links";
 
 const logoStyle = {width: 128, display: 'inline-block', margin: '0.5rem', borderRadius: '50%'}
 // 首页
@@ -17,13 +18,13 @@ export default function About() {
         <Paragraph style={{ fontSize: '1rem' }}>{i18n('about1')}</Paragraph>
 
         <Paragraph style={{ fontSize: '1.25rem' }}>
-          {i18n('steam')}: <a href="https://steamcommunity.com/id/hotwaterman">Hotwaterman</a>
+          {i18n('steam')}: <a href={links.steam}>Hotwaterman</a>
         </Paragraph>
         <Paragraph style={{ fontSize: '1.25rem' }}>
-          {i18n('email')}: <a href="mailto:liaorenj@gmail.com">liaorenj@gmail.com</a>
+          {i18n('email')}: <a href={`mailto:${links.mail}`}>liaorenj@gmail.com</a>
         </Paragraph>
         <Paragraph style={{ fontSize: '1.25rem' }}>
-          {i18n('telegram')}: <a href="https://t.me/Greatpipi">Telegram</a>
+          {i18n('telegram')}: <a href={links.tg}>Telegram</a>
         </Paragraph>
         <div className="verse" style={{marginTop: '2rem', fontWeight: 'bold', textAlign: 'center'}}>
           <Paragraph className="verse" style={{ fontSize: '1.25rem' }}>

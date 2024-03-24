@@ -10,12 +10,12 @@ import TimelineWork from "../lib/timeline_work";
 import './Home.css';
 import { getMode, themeToken } from "../lib/theme";
 import { i18n } from "../lib/18n/18n";
+import links from "../lib/links";
 
-const { useToken } = theme;
 const welcomeText = '$ 🐼 Hello, my name is Landers<br>' +
-  '$ 👉 Follow me on [Github] <a href="https://github.com/landers1037">https://github.com/landers1037</a><br>' +
-  '$ 👀 View my site on <a href="http://renj.io">http://renj.io</a><br>' +
-  '$ 📧 Mail to me [Gmail] <a href="mailto:liaorenj@gmail.com">liaorenj@gmail.com</a>'
+  `$ 👉 Follow me on [Github] <a href=${links.github}>${links.github}</a><br>` +
+  `$ 👀 View my site on <a href=${links.page}>${links.page}</a><br>` +
+  `$ 📧 Mail to me [Gmail] <a href=mailto:${links.mail}>${links.mail}</a>`
 
 // 首页
 export default function Home() {
@@ -53,26 +53,26 @@ export default function Home() {
       </header>
       <section className={utilStyles.headingMd}>
         <p style={{ color: token.colorTextBanner }}>{i18n('welcome1')} 🙂<br/>
-          {i18n('welcome2')} 👉 <a href="http://me.renj.io">{i18n('cv')}</a> {i18n('cv1')}
+          {i18n('welcome2')} 👉 <a href={links.resume}>{i18n('cv')}</a> {i18n('cv1')}
         </p>
       </section>
       <Divider />
       <Card title=">/" bordered={true} style={{ width: '100%' }}>
-        <div className="shell" dangerouslySetInnerHTML={{ __html: useTypewriter(welcomeText, 50) || '.' }}></div>
+        <div className="shell" dangerouslySetInnerHTML={{ __html: useTypewriter(welcomeText, 35) || '.' }}></div>
       </Card>
       <Divider />
       <Row className="ant-over">
         <Col lg={4} md={6} xs={24} sm={10} style={{margin: '0.5rem'}}>
-          <QRCode className="ant-over" value="https://fb.me/landers1037" color={token.colorInfoText} style={{backgroundColor: token.colorBgLayout}}/>
+          <QRCode className="ant-over" value={links.facebook} color={token.colorInfoText} style={{backgroundColor: token.colorBgLayout}}/>
           <br/>
-          <Button className="ant-over" style={{backgroundColor: token.colorPrimary, color: token.colorWhite, marginTop: '0.5rem'}} type="link" href="https://fb.me/landers1037">
+          <Button className="ant-over" style={{backgroundColor: token.colorPrimary, color: token.colorWhite, marginTop: '0.5rem'}} type="link" href={links.facebook}>
             @Facebook
           </Button>
         </Col>
         <Col lg={4} md={6} xs={24} sm={10} style={{margin: '0.5rem'}}>
-          <QRCode className="ant-over" value="https://stackoverflow.com/users/11940188/landers1037" color={token.colorWarningText} style={{backgroundColor: token.colorBgLayout}}/>
+          <QRCode className="ant-over" value={links.stackoverflow} color={token.colorWarningText} style={{backgroundColor: token.colorBgLayout}}/>
           <br/>
-          <Button className="ant-over" style={{backgroundColor: token.colorWarning, color: token.colorWhite, marginTop: '0.5rem'}} type="link" href="https://stackoverflow.com/users/11940188/landers1037">
+          <Button className="ant-over" style={{backgroundColor: token.colorWarning, color: token.colorWhite, marginTop: '0.5rem'}} type="link" href={links.stackoverflow}>
             @Stackoverflow
           </Button>
         </Col>

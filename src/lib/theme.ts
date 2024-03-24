@@ -1,6 +1,11 @@
 import { theme } from "antd";
 import getDesignToken from "antd/es/theme/getDesignToken";
 
+enum ThemeMode {
+  Light = 'light',
+  Night = 'night'
+}
+
 const themeMap = {
   'light': {
     ...getDesignToken({algorithm: theme.defaultAlgorithm}),
@@ -26,7 +31,7 @@ const updateMode = (mode: string) => {
 }
 
 const getMode = () => {
-  return localStorage.getItem('mode') || 'light'
+  return localStorage.getItem('mode') || ThemeMode.Light
 }
 
-export {themeMap, themeToken, getMode, updateMode}
+export {ThemeMode, themeMap, themeToken, getMode, updateMode}

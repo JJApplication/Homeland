@@ -6,7 +6,7 @@ import './style-light.css';
 import Layout from "../components/Layout";
 import { Button } from "antd";
 import { VerticalAlignTopOutlined } from "@ant-design/icons";
-import { getMode, themeToken } from "../lib/theme";
+import { getMode, ThemeMode, themeToken } from "../lib/theme";
 
 export default function WorkLayout({name, content}: {
   name: string,
@@ -26,7 +26,7 @@ export default function WorkLayout({name, content}: {
 
   const getMarkdownStyle = () => {
     const mode = getMode();
-    if (mode === 'light') {
+    if (mode === ThemeMode.Light) {
       return 'markdown-body-light'
     }
     return 'markdown-body'

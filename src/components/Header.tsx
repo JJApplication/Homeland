@@ -1,6 +1,7 @@
 import { Menu, MenuProps } from "antd";
 import React from "react";
 import { i18n } from "../lib/18n/18n";
+import links from "../lib/links";
 
 const items: MenuProps['items'] = [
   {
@@ -82,11 +83,11 @@ const items: MenuProps['items'] = [
         key: '@http://doc.mgek.cc',
       },
       {
-        label: <a href="https://github.com/jjapplication" target="_blank" rel="noopener noreferrer">JJApp Organization</a>,
+        label: <a href={links.jjapp} target="_blank" rel="noopener noreferrer">JJApp Organization</a>,
         key: '@jjapplication',
       },
       {
-        label: <a href="https://github.com/geekfw" target="_blank" rel="noopener noreferrer">GeekFW Organization</a>,
+        label: <a href={links.geekfw} target="_blank" rel="noopener noreferrer">GeekFW Organization</a>,
         key: '@geekfw',
       },
     ],
@@ -97,7 +98,7 @@ const items: MenuProps['items'] = [
   },
   {
     label: (
-      <a href="https://github.com/landers1037" target="_blank" rel="noopener noreferrer">
+      <a href={links.github} target="_blank" rel="noopener noreferrer">
         Github
       </a>
     ),

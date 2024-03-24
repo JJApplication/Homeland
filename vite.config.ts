@@ -6,9 +6,9 @@ import { plugin as mdPlugin, Mode } from './plugin-markdown/index';
 export default defineConfig({
   plugins: [
       react(),
-    mdPlugin({
-      mode: [Mode.HTML],
-    }),
+      mdPlugin({
+        mode: [Mode.HTML],
+      }),
   ],
   build: {
     rollupOptions: {
