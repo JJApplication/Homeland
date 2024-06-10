@@ -19,7 +19,8 @@ export default {
   update2: '华为 - 安全测试工程师',
   find: '在哪里可以找到我',
   about1: '一个普普通通的开发者',
-  steam: '我的Steam账户',
+  steam: '我的Steam',
   email: '我的邮箱',
-  telegram: '我的Telegram频道'
+  telegram: '我的Telegram频道',
+  facebook: '我的Facebook主页'
 }

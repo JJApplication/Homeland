@@ -19,8 +19,8 @@ export default {
   update2: 'Work in Huawei Technologies Co., Ltd. as a security engineer.',
   find: 'Where you can find me.',
   about1: 'Just a programmer ...',
-  steam: 'My Steam Account',
+  steam: 'My Steam',
   email: 'My Email',
   telegram: 'My Telegram',
-
+  facebook: 'My Facebook',
 }

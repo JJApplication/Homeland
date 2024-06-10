@@ -1,5 +1,9 @@
 const TimelineWork = [
   {
+    children: 'Huawei (Calculation) 2024',
+    color: 'blue',
+  },
+  {
     children: 'Huawei (Security) 2023',
     color: 'red',
   },
