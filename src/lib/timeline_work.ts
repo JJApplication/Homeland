@@ -1,26 +1,28 @@
+import { i18n } from "./18n/18n";
+
 const TimelineWork = [
   {
-    children: 'Huawei (Calculation) 2024',
-    color: 'blue',
-  },
-  {
-    children: 'Huawei (Security) 2023',
+    children: i18n('work6'),
     color: 'red',
   },
   {
-    children: 'Huawei (Js/Ts) 2022',
+    children: i18n('work5'),
     color: 'green',
   },
   {
-    children: 'Huawei (Go) 2020-2021',
+    children: i18n('work4'),
     color: 'green',
   },
   {
-    children: 'CETC 41 (intern) 2019',
+    children: i18n('work3'),
     color: 'green',
   },
   {
-    children: 'HuaZhong University of sci&tech 2016-2020',
+    children: i18n('work2'),
+    color: 'green',
+  },
+  {
+    children: i18n('work1'),
   },
 ]
 

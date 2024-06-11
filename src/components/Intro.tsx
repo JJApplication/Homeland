@@ -25,6 +25,8 @@ export default function Intro() {
         <Text style={{ margin: '1.5rem 0', fontSize: '1.25rem' }}>{i18n('update1')}</Text>
         <Title level={3} style={{ color: '#0f9800' }}>{i18n('update2024')}</Title>
         <Text style={{ margin: '1.5rem 0', fontSize: '1.25rem' }}>{i18n('update2')}</Text>
+        <Title level={3} style={{ color: '#0f9800' }}>{i18n('update2024')}</Title>
+        <Text style={{ margin: '1.5rem 0', fontSize: '1.25rem' }}>{i18n('update3')}</Text>
         <List
           className="ant-over"
           header={<Title level={3}>{i18n('find')}</Title>}
