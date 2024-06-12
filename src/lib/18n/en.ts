@@ -24,6 +24,7 @@ export default {
   email: 'My Email',
   telegram: 'My Telegram',
   facebook: 'My Facebook',
+  thanks: 'Special thanks to Michael Zhang for the translation work',
 
   site1: 'wordpress - first site 2017-09-01',
   site2: 'register domain lrenj.top 2018',

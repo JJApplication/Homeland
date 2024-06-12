@@ -28,6 +28,9 @@ export default function About() {
         <Paragraph style={{ fontSize: '1.25rem' }}>
           {i18n('facebook')}: <a href={links.facebook}>Facebook</a>
         </Paragraph>
+        <Paragraph style={{ fontSize: '0.95rem', color: '#505050' }}>
+          {i18n('thanks')}
+        </Paragraph>
         <div className="verse" style={{marginTop: '2rem', fontWeight: 'bold', textAlign: 'center'}}>
           <Paragraph className="verse" style={{ fontSize: '1.25rem' }}>
             卷帘天自高，海水摇空绿。

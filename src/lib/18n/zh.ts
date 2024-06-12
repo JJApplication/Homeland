@@ -24,6 +24,7 @@ export default {
   email: '我的邮箱',
   telegram: '我的Telegram频道',
   facebook: '我的Facebook主页',
+  thanks: '特别感谢Michael Zhang • 张先生提供的翻译工作',
 
   site1: 'wordpress - 我的第一个站点 2017-09-01',
   site2: '注册域名lrenj.top 2018',
