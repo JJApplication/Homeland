@@ -17,7 +17,7 @@ export default {
   update2024: '2024更新',
   update1: '华为(公共开发部) - 软件开发工程师',
   update2: '华为(ICSL) - 安全测试工程师',
-  update3: '华为(计算产品线) - DevOps工程师',
+  update3: '华为(计算产品线) - 软件开发工程师',
   find: '在哪里可以找到我',
   about1: '一个普普通通的开发者',
   steam: '我的Steam',

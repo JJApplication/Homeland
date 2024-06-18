@@ -17,7 +17,7 @@ export default {
   update2024: 'Update 2024',
   update1: 'Work in Huawei Technologies Co., Ltd. as a developer.',
   update2: 'Work in Huawei Technologies Co., Ltd. as a security engineer.',
-  update3: 'Work in Huawei Technologies Co., Ltd. as a devops engineer.',
+  update3: 'Work in Huawei Technologies Co., Ltd. as a software engineer.',
   find: 'Where you can find me.',
   about1: 'Just a programmer ...',
   steam: 'My Steam',
