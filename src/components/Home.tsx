@@ -1,6 +1,6 @@
 import Layout from './Layout'
 import utilStyles from '../styles/utils.module.css'
-import { QRCode, theme, Divider, Col, Row, Button, Timeline, message, Card } from 'antd';
+import { QRCode, theme, Divider, Col, Row, Button, Timeline, message, Card, List, Typography } from 'antd';
 import styles from "./layout.module.css";
 import profile from "../assets/profile.jpg";
 import React, { useEffect, useState } from "react";
@@ -11,6 +11,7 @@ import './Home.css';
 import { getMode, themeToken } from "../lib/theme";
 import { i18n } from "../lib/18n/18n";
 import links from "../lib/links";
+import list from "../lib/list";
 
 const welcomeText = '$ 🐼 Hello, my name is Landers<br>' +
   `$ 👉 Follow me on [Github] <a href=${links.github}>${links.github}</a><br>` +
@@ -19,6 +20,7 @@ const welcomeText = '$ 🐼 Hello, my name is Landers<br>' +
 
 // 首页
 export default function Home() {
+  const { Title, Paragraph, Text, Link } = Typography;
   const [messageApi, contextHolder] = message.useMessage();
   const [token, setToken] = useState(themeToken(getMode()))
   const thanks = () => {
@@ -51,16 +53,48 @@ export default function Home() {
          alt="profile"/>
         <h1 className={utilStyles.heading2Xl}>{i18n('slogan')}</h1>
       </header>
+      <Title style={{ fontSize: '1.5rem',fontWeight: 'bold',color: '#909090' }}>✨START</Title>
       <section className={utilStyles.headingMd}>
-        <p style={{ color: token.colorTextBanner }}>{i18n('welcome1')} 🙂<br/>
+        <Paragraph style={{ color: token.colorTextBanner,fontSize:'1.25rem' }}>{i18n('welcome1')} 🙂<br/>
           {i18n('welcome2')} 👉 <a href={links.resume}>{i18n('cv')}</a> {i18n('cv1')}
-        </p>
+        </Paragraph>
       </section>
       <Divider />
       <Card title=">/" bordered={true} style={{ width: '100%' }}>
         <div className="shell" dangerouslySetInnerHTML={{ __html: useTypewriter(welcomeText, 35) || '.' }}></div>
       </Card>
       <Divider />
+      <Title style={{ fontSize: '1.5rem',fontWeight: 'bold',color: '#909090' }}>🕶️Introduction</Title>
+      <div style={{ fontSize: '1.2rem' }}>
+        <Paragraph style={{ margin: '1rem 0', fontSize: '1.25rem' }}>
+          {i18n('intro1')}
+        </Paragraph>
+        <Paragraph style={{ margin: '1rem 0', fontSize: '1.25rem' }}>
+          {i18n('intro2')}
+        </Paragraph>
+        <Paragraph style={{ fontSize: '1.25rem' }}>
+          {i18n('intro3')}
+        </Paragraph>
+        <Paragraph>
+          —— {i18n('intro_footer')}
+        </Paragraph>
+        <Divider/>
+        <Title style={{ fontSize: '1.5rem',fontWeight: 'bold',color: '#909090' }}>💼Work Experience</Title>
+        <Paragraph style={{ fontSize: '1.25rem' }}>
+          {i18n('update1')}
+          <Text style={{ color: '#a5a5a5',fontSize:'1rem' }}>&nbsp;——&nbsp;{i18n('update2023')}</Text>
+        </Paragraph>
+        <Paragraph style={{ fontSize: '1.25rem' }}>
+          {i18n('update2')}
+          <Text style={{ color: '#a5a5a5',fontSize:'1rem' }}>&nbsp;——&nbsp;{i18n('update2024')}</Text>
+        </Paragraph>
+        <Paragraph style={{ fontSize: '1.25rem' }}>
+          {i18n('update3')}
+          <Text style={{ color: '#a5a5a5',fontSize:'1rem'}}>&nbsp;——&nbsp;{i18n('update2024')}</Text>
+        </Paragraph>
+      </div>
+      <Divider />
+      <Title style={{ fontSize: '1.5rem',fontWeight: 'bold',color: '#909090' }}>📱Social</Title>
       <Row className="ant-over">
         <Col lg={4} md={6} xs={24} sm={10} style={{margin: '0.5rem'}}>
           <QRCode className="ant-over" value={links.facebook} color={token.colorInfoText} style={{backgroundColor: token.colorBgLayout}}/>
@@ -77,7 +111,22 @@ export default function Home() {
           </Button>
         </Col>
       </Row>
+      <List
+          bordered
+          className="ant-over"
+          header={<Title level={5}>🌍{i18n('find')}</Title>}
+          dataSource={list}
+          split
+          renderItem={(item) => {
+            return (
+                <List.Item>
+                  <a href={item.url}>{item.title}</a>
+                </List.Item>)}
+          }
+      >
+      </List>
       <Divider />
+      <Title style={{ fontSize: '1.5rem',fontWeight: 'bold',color: '#909090' }}>🕛Timeline</Title>
       <section style={{paddingBottom: '2rem'}}>
         <Row className="ant-over">
           <Col className="ant-over" span={12} md={12} xs={24} sm={24}>

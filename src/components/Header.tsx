@@ -9,10 +9,6 @@ const items: MenuProps['items'] = [
     key: '/',
   },
   {
-    label: <a href="/intro">{i18n('intro')}</a>,
-    key: 'intro',
-  },
-  {
     label: i18n('project'),
     key: 'works',
     children: [

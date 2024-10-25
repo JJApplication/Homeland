@@ -17,7 +17,6 @@ import { html as Sandwich } from '../works/Sandwich.md';
 
 const NotFound = React.lazy(() => import("../components/NotFound"));
 const Home = React.lazy(() => import("../components/Home"));
-const Intro = React.lazy(() => import("../components/Intro"));
 const About = React.lazy(() => import("../components/About"));
 const WorkLayout = React.lazy(() => import("../works/Layout"));
 
@@ -29,10 +28,6 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />
-  },
-  {
-    path: "/intro",
-    element: <Intro />
   },
   {
     path: "/about",
