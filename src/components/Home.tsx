@@ -53,9 +53,9 @@ export default function Home() {
          alt="profile"/>
         <h1 className={utilStyles.heading2Xl}>{i18n('slogan')}</h1>
       </header>
-      <Title style={{ fontSize: '1.5rem',fontWeight: 'bold',color: '#909090' }}>✨START</Title>
-      <section className={utilStyles.headingMd}>
-        <Paragraph style={{ color: token.colorTextBanner,fontSize:'1.25rem' }}>{i18n('welcome1')} 🙂<br/>
+      <Title className={`${utilStyles.font150} ${utilStyles.fontBold}`} style={{ color: '#909090' }}>✨START</Title>
+      <section className={utilStyles.headingMd} style={{ margin: '1rem 0' }}>
+        <Paragraph className={utilStyles.font105} style={{ color: token.colorTextBanner }}>{i18n('welcome1')} 🙂<br/>
           {i18n('welcome2')} 👉 <a href={links.resume}>{i18n('cv')}</a> {i18n('cv1')}
         </Paragraph>
       </section>
@@ -64,37 +64,37 @@ export default function Home() {
         <div className="shell" dangerouslySetInnerHTML={{ __html: useTypewriter(welcomeText, 35) || '.' }}></div>
       </Card>
       <Divider />
-      <Title style={{ fontSize: '1.5rem',fontWeight: 'bold',color: '#909090' }}>🕶️Introduction</Title>
-      <div style={{ fontSize: '1.2rem' }}>
-        <Paragraph style={{ margin: '1rem 0', fontSize: '1.25rem' }}>
+      <Title className={`${utilStyles.font150} ${utilStyles.fontBold}`} style={{ color: '#909090' }}>🕶️Introduction</Title>
+      <div>
+        <Paragraph className={utilStyles.font105} style={{ margin: '1rem 0' }}>
           {i18n('intro1')}
         </Paragraph>
-        <Paragraph style={{ margin: '1rem 0', fontSize: '1.25rem' }}>
+        <Paragraph className={utilStyles.font105} style={{ margin: '1rem 0' }}>
           {i18n('intro2')}
         </Paragraph>
-        <Paragraph style={{ fontSize: '1.25rem' }}>
+        <Paragraph className={utilStyles.font105}>
           {i18n('intro3')}
         </Paragraph>
         <Paragraph>
           —— {i18n('intro_footer')}
         </Paragraph>
         <Divider/>
-        <Title style={{ fontSize: '1.5rem',fontWeight: 'bold',color: '#909090' }}>💼Work Experience</Title>
-        <Paragraph style={{ fontSize: '1.25rem' }}>
+        <Title className={`${utilStyles.font150} ${utilStyles.fontBold}`} style={{ color: '#909090' }}>💼Work Experience</Title>
+        <Paragraph className={utilStyles.font105} style={{ margin: '1rem 0' }}>
           {i18n('update1')}
-          <Text style={{ color: '#a5a5a5',fontSize:'1rem' }}>&nbsp;——&nbsp;{i18n('update2023')}</Text>
+          <Text style={{ color: '#8a8a8a' }}>&nbsp;——&nbsp;{i18n('update2023')}</Text>
         </Paragraph>
-        <Paragraph style={{ fontSize: '1.25rem' }}>
+        <Paragraph className={utilStyles.font105}>
           {i18n('update2')}
-          <Text style={{ color: '#a5a5a5',fontSize:'1rem' }}>&nbsp;——&nbsp;{i18n('update2024')}</Text>
+          <Text style={{ color: '#8a8a8a'}}>&nbsp;——&nbsp;{i18n('update2024')}</Text>
         </Paragraph>
-        <Paragraph style={{ fontSize: '1.25rem' }}>
+        <Paragraph className={utilStyles.font105}>
           {i18n('update3')}
-          <Text style={{ color: '#a5a5a5',fontSize:'1rem'}}>&nbsp;——&nbsp;{i18n('update2024')}</Text>
+          <Text style={{ color: '#8a8a8a'}}>&nbsp;——&nbsp;{i18n('update2024')}</Text>
         </Paragraph>
       </div>
       <Divider />
-      <Title style={{ fontSize: '1.5rem',fontWeight: 'bold',color: '#909090' }}>📱Social</Title>
+      <Title className={`${utilStyles.font150} ${utilStyles.fontBold}`} style={{ color: '#909090' }}>📱Social</Title>
       <Row className="ant-over">
         <Col lg={4} md={6} xs={24} sm={10} style={{margin: '0.5rem'}}>
           <QRCode className="ant-over" value={links.facebook} color={token.colorInfoText} style={{backgroundColor: token.colorBgLayout}}/>
@@ -126,7 +126,7 @@ export default function Home() {
       >
       </List>
       <Divider />
-      <Title style={{ fontSize: '1.5rem',fontWeight: 'bold',color: '#909090' }}>🕛Timeline</Title>
+      <Title className={`${utilStyles.font150} ${utilStyles.fontBold}`} style={{ color: '#909090' }}>🕛Timeline</Title>
       <section style={{paddingBottom: '2rem'}}>
         <Row className="ant-over">
           <Col className="ant-over" span={12} md={12} xs={24} sm={24}>

@@ -40,6 +40,30 @@
     cursor: pointer;
 }
 
+.fontBold {
+    font-weight: bold!important;
+}
+
+.font150 {
+    font-size: 1.5rem!important;
+}
+
+.font125 {
+    font-size: 1.25rem!important;
+}
+
+.font1 {
+    font-size: 1rem!important;
+}
+
+.font105 {
+    font-size: 1.05rem!important;
+}
+
+.font085 {
+    font-size: 0.85rem!important;
+}
+
 @keyframes profile {
     from {
         transform: rotate(0deg);
