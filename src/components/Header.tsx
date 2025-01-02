@@ -59,8 +59,8 @@ const items: MenuProps['items'] = [
     key: 'pages',
     children: [
       {
-        label: <a href="http://mgek.cc" target="_blank" rel="noopener noreferrer">Mgek Works</a>,
-        key: '@http://mgek.cc',
+        label: <a href="http://mgek.renj.io" target="_blank" rel="noopener noreferrer">Mgek Works</a>,
+        key: '@http://mgek.renj.io',
       },
       {
         label: <a href="https://blog.renj.io" target="_blank" rel="noopener noreferrer">Blog</a>,
@@ -75,8 +75,8 @@ const items: MenuProps['items'] = [
         key: '@http://service.renj.io',
       },
       {
-        label: <a href="http://doc.mgek.cc" target="_blank" rel="noopener noreferrer">Online Docs</a>,
-        key: '@http://doc.mgek.cc',
+        label: <a href="http://doc.renj.io" target="_blank" rel="noopener noreferrer">Online Docs</a>,
+        key: '@http://doc.renj.io',
       },
       {
         label: <a href={links.jjapp} target="_blank" rel="noopener noreferrer">JJApp Organization</a>,
