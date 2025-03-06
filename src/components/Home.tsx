@@ -90,7 +90,7 @@ export default function Home() {
         </Paragraph>
         <Paragraph className={utilStyles.font105}>
           {i18n('update3')}
-          <Text style={{ color: '#8a8a8a'}}>&nbsp;——&nbsp;{i18n('update2024')}</Text>
+          <Text style={{ color: '#8a8a8a'}}>&nbsp;——&nbsp;{i18n('update2025')}</Text>
         </Paragraph>
       </div>
       <Divider />
