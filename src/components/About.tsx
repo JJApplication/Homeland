@@ -19,13 +19,13 @@ export default function About() {
         <Paragraph style={{ fontSize: '1rem' }}>{i18n('about1')}</Paragraph>
         <Image src={me} width={480}></Image>
 
-        <Paragraph style={{ fontSize: '1.25rem' }}>
+        <Paragraph className={utilStyles.font105}>
           {i18n('steam')}: <a href={links.steam}>Hotwaterman</a>
         </Paragraph>
-        <Paragraph style={{ fontSize: '1.25rem' }}>
+        <Paragraph className={utilStyles.font105}>
           {i18n('email')}: <a href={`mailto:${links.mail}`}>liaorenj@gmail.com</a>
         </Paragraph>
-        <Paragraph style={{ fontSize: '1.25rem' }}>
+        <Paragraph className={utilStyles.font105}>
           {i18n('facebook')}: <a href={links.facebook}>Facebook</a>
         </Paragraph>
         <Paragraph style={{ fontSize: '0.95rem', color: '#505050' }}>

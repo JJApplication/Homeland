@@ -19,6 +19,7 @@
     "htmlparser2": "^8.0.1",
     "markdown-it": "^13.0.1",
     "markdown-it-linkify-images": "^4.0.0",
+    "prettier": "^3.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.1",

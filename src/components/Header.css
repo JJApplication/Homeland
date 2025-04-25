@@ -1,0 +1,9 @@
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.flex-header {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}

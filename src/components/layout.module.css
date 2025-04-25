@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: -2rem -4rem 0;
+    margin: -2rem 0 0;
     padding: 4rem 1rem;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .body {
-    padding: 2rem 4rem;
+    padding: 2rem 0;
 }
 
 @media (max-width: 480px) {
@@ -42,7 +42,7 @@
     position: fixed;
     bottom: 0;
     font-weight: bold;
-    font-size: .95rem;
+    font-size: .85rem;
     text-align: center;
     color: #91a1ff;
     padding: 0;
