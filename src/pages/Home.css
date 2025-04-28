@@ -77,9 +77,8 @@
 }
 
 .title-number {
-    font-family: "IBM Plex Mono", monospace;
     background-color: #222222;
-    padding: 4px;
+    padding: 4px 6px;
     color: white;
     margin-right: 8px;
 }

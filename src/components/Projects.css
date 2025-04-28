@@ -35,13 +35,14 @@
     height: 84px;
     border-radius: 50%;
     cursor: pointer;
-    transition: transform 0.4s ease-out;
+    transition: transform 0.4s ease;
 }
 
 .projects-container-content .logo:hover{
     transform: scale(1.15);
     transform-origin: center center;
     transition: transform 0.4s ease;
+    box-shadow: 0 0 15px 10px rgba(2, 2, 2, 0.1);
 }
 
 
@@ -58,8 +59,8 @@
 
 .projects-container-content .link {
     display: inline-flex;
-    width: 100px;
-    font-size: 24px;
+    width: 120px;
+    font-size: 22px;
     color: #989898;
     cursor: pointer;
     margin-left: 1rem;
@@ -69,6 +70,5 @@
 
 .projects-container-content .link:hover {
     color: #2f2f2f;
-    font-size: 32px;
     transition: all 0.3s ease;
 }

@@ -87,10 +87,10 @@ export default function Home() {
           </section>
           <Projects token={token} />
             <section className={'dynamic'}>
-              <Title className={`${utilStyles.font150} ${utilStyles.fontBold} hide1`}>
+              <Title className={`${utilStyles.font200} ${utilStyles.fontBold} hide1`}>
                 {i18n('projects.hide1')}
               </Title>
-              <Title className={`${utilStyles.font150} ${utilStyles.fontBold}`}>
+              <Title className={`${utilStyles.font200} ${utilStyles.fontBold}`}>
                 {i18n('projects.line3')}
               </Title>
               <Paragraph className={`${utilStyles.font100} hide2`}>
