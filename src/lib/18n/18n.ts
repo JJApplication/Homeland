@@ -1,17 +1,26 @@
+// @ts-nocheck
 import zh from './zh'
 import en from './en'
 
 const i18n = (key: string): string => {
   const language = localStorage.getItem('language') || 'en'
+  const i18nSplit = key.includes('.')
+  const i18nSplits = key.split('.')
   switch (language) {
     case 'zh':
-      // @ts-ignore
+        if (i18nSplit) {
+          return zh[i18nSplits[0]][i18nSplits[1]]
+        }
       return zh[key]
     case 'en':
-      // @ts-ignore
+      if (i18nSplit) {
+        return en[i18nSplits[0]][i18nSplits[1]]
+      }
       return en[key]
     default:
-      // @ts-ignore
+      if (i18nSplit) {
+        return en[i18nSplits[0]][i18nSplits[1]]
+      }
       return en[key]
   }
 }

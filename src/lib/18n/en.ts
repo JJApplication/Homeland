@@ -41,4 +41,18 @@ export default {
   work4: 'Huawei (NCE-Js/Ts) 2022',
   work5: 'Huawei (ICSL-Security) 2023',
   work6: 'Huawei (Calculation) 2024',
+  title: {
+    start: 'Start',
+    introduction: 'Introduction',
+    work: 'Work Experience',
+    projects: 'Projects',
+    social: 'Social',
+    timeline: 'Timeline'
+  },
+  projects: {
+    line1: 'Interpret freedom through code and record happiness through programming.',
+    line2: 'A omnivore of programming languages: tasting Golang, Python, Javascript, Rust and more.',
+    line3: 'Our goals',
+    line4: 'Write what I think, do what I love, and make life more wonderful and interesting!',
+  }
 }

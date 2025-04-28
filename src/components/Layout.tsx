@@ -55,7 +55,7 @@ export default function Layout({ children, home }: {
       // @ts-ignore
     <ConfigProvider theme={{token: themeToken(useTheme)}}>
       <div style={{ backgroundColor: globalBg, height: '100%', overflowY: 'auto' }}>
-        <div style={{ paddingBottom: '2rem', maxWidth: '1024px', margin: '0 auto' }}>
+        <div style={{ paddingBottom: '2rem', maxWidth: '1280px', margin: '0 auto' }}>
           <div>
             <>
               <FloatButton data-id='themeSwitch' icon={<TranslationOutlined />} type="default" style={{ right: 32 }} onClick={changeI18n} />

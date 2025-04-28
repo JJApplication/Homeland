@@ -122,7 +122,7 @@ const items: MenuProps['items'] = [
     ],
   },
   {
-    label: <a href="/about">{i18n('about')}</a>,
+    label: <a href="/About">{i18n('about')}</a>,
     key: 'about',
   },
   {
@@ -178,7 +178,7 @@ export default function Header() {
   return (
     <>
       <Flex className={'flex-header'} gap="small" justify="space-between" align="center" style={{ backgroundColor: token.colorBgGlobal }}>
-        <img className="logo" src={getLogo()}  alt='logo'/>
+        <img className="logo" src={getLogo()}  alt='logo' style={{ cursor: 'pointer' }} onClick={() => {open('/', '_self')}}/>
         <Menu className="ant-over" mode="horizontal" items={items} style={styles} />
       </Flex>
     </>

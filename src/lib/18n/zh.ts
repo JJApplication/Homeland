@@ -41,4 +41,18 @@ export default {
   work4: '华为 (NCE-前端开发) 2022',
   work5: '华为 (ICSL-安全测试) 2023',
   work6: '华为 (计算产品线) 2024',
+  title: {
+    start: '开始',
+    introduction: '简介',
+    work: '工作经历',
+    projects: '项目',
+    social: '社交',
+    timeline: '时间线'
+  },
+  projects: {
+    line1: '通过代码诠释自由，通过编程记录快乐',
+    line2: '一个编程语言杂食者：品鉴Golang、Python、Javascript、Rust以及更多',
+    line3: '我们的愿景',
+    line4: '写我所想，做我所爱，让生活更加精彩有趣！',
+  }
 }

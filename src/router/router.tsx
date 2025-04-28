@@ -15,9 +15,9 @@ import { html as Fushin } from '../works/Fushin.md';
 import { html as Octopus } from '../works/Octopus.md';
 import { html as Sandwich } from '../works/Sandwich.md';
 
-const NotFound = React.lazy(() => import("../components/NotFound"));
-const Home = React.lazy(() => import("../components/Home"));
-const About = React.lazy(() => import("../components/About"));
+const NotFound = React.lazy(() => import("../pages/NotFound"));
+const Home = React.lazy(() => import("../pages/Home"));
+const About = React.lazy(() => import("../pages/About"));
 const WorkLayout = React.lazy(() => import("../works/Layout"));
 
 const router = createBrowserRouter([

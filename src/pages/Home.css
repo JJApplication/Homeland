@@ -13,8 +13,8 @@
 }
 
 .photo-container {
-    width: 200px;
-    height: 200px;
+    width: 256px;
+    height: 256px;
     position: relative;
     cursor: pointer;
     border-radius: 50%;
@@ -26,7 +26,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    transform-origin: center center;
+    transform-origin: center top;
     transition: transform 0.5s ease;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .photo-container:hover .photo-shutter {
-    transform: scaleX(1.5) scaleY(1.5);
+    transform: scaleX(2) scaleY(2);
     border-radius: 0;
 }
 
@@ -56,18 +56,24 @@
     border-bottom: 1px solid rgba(20, 20, 20, 0.1);
 }
 
-.footer-content {
-    font-size: 0.85rem;
+.home-content-item {
     position: relative;
-    padding: 1rem 2rem;
-    border-left: 1px solid rgba(20, 20, 20, 0.1);
-    border-right: 1px solid rgba(20, 20, 20, 0.1);
+    margin-left: -2rem;
+    margin-right: -2rem;
+    padding: 2rem;
     border-bottom: 1px solid rgba(20, 20, 20, 0.1);
+}
+
+.home-content-item:last-child {
+    position: relative;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    padding: 2rem 2rem 0 2rem;
+    border-bottom: none;
 }
 
 .timeline {
     position: relative;
-    padding-bottom: 2rem;
 }
 
 .title-number {

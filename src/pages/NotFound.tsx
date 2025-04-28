@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from './Layout'
+import Layout from '../components/Layout'
 import img404 from '../assets/404.gif';
 
 export default function NotFound() {

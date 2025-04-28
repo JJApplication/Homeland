@@ -12,6 +12,8 @@ const themeMap = {
     colorBgGlobal: '#FFFFFF',
     colorBgBanner: '#F5F5F5',
     colorTextBanner: '#121212',
+    colorTextTitle: '#222222',
+    colorText: '#808080',
     imageBgBanner: 'linear-gradient(to right,#f6f6f6 1px,transparent 1px),linear-gradient(to bottom,#f6f6f6 1px,transparent 1px)',
   },
   'night': {
@@ -19,6 +21,8 @@ const themeMap = {
     colorBgGlobal: '#000000',
     colorBgBanner: '#121212',
     colorTextBanner: '#FFFFFF',
+    colorTextTitle: '#ffffff',
+    colorText: '#808080',
     imageBgBanner: 'linear-gradient(to right,rgba(60,60,60,0.4) 1px,transparent 1px),linear-gradient(to bottom,rgba(60,60,60,0.4) 1px,transparent 1px)',
   },
 }

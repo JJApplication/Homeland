@@ -8,5 +8,12 @@ export default {
   jjapp: 'https://github.com/jjapplication',
   geekfw: 'https://github.com/geekfw',
   steam: 'https://steamcommunity.com/id/hotwaterman',
-  tg: 'https://t.me/Greatpipi'
+  tg: 'https://t.me/Greatpipi',
+  imghost_github: 'https://github.com/landers1037/imghost',
+  blog_github: 'https://github.com/jjapplication/blog',
+  blog: 'https://blog.renj.io',
+  apollo_github: 'https://github.com/jjapplication/apollo',
+  apollo: 'https://service.renj.io',
+  jjapps_github: 'https://github.com/jjapplication',
+  jjapps: 'https://jjapp.dev',
 }

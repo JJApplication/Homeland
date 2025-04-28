@@ -1,5 +1,5 @@
 // 关于页面
-import Layout from './Layout'
+import Layout from '../components/Layout'
 import utilStyles from '../styles/utils.module.css'
 import { Divider, Image, Typography } from "antd";
 import React from "react";
