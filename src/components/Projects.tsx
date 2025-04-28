@@ -17,7 +17,7 @@ export default function Projects({ token }) {
           </div>
           <div className={'content'}>
             <p style={{ width: '100%', padding: '1rem' }}>
-              <span style={{ color: token.colorTextTitle, fontSize: '24px', fontWeight: '600' }}>ImgHost</span>
+              <span style={{ color: token.colorTextTitle, fontSize: '22px', fontWeight: '600' }}>ImgHost</span>
               <br />
               <span style={{ display: 'block', marginTop: '0.5rem', color: token.colorText }}>
                 A lightweight personal image hosting service
@@ -39,7 +39,7 @@ export default function Projects({ token }) {
           </div>
           <div className={'content'}>
             <p style={{ width: '100%', padding: '1rem' }}>
-              <span style={{ color: token.colorTextTitle, fontSize: '24px', fontWeight: '600' }}>Blog Generator</span>
+              <span style={{ color: token.colorTextTitle, fontSize: '22px', fontWeight: '600' }}>Blog Generator</span>
               <span style={{ display: 'block', marginTop: '0.5rem', color: token.colorText }}>
                 Blog generator driven by Markdown
               </span>
@@ -64,7 +64,7 @@ export default function Projects({ token }) {
           </div>
           <div className={'content'}>
             <p style={{ width: '100%', padding: '1rem' }}>
-              <span style={{ color: token.colorTextTitle, fontSize: '24px', fontWeight: '600' }}>Apollo</span>
+              <span style={{ color: token.colorTextTitle, fontSize: '22px', fontWeight: '600' }}>Apollo</span>
               <span style={{ display: 'block', marginTop: '0.5rem', color: token.colorText }}>
                 A cloud-native modular microservice integration and deployment tool
               </span>
@@ -89,7 +89,7 @@ export default function Projects({ token }) {
           </div>
           <div className={'content'}>
             <p style={{ width: '100%', padding: '1rem' }}>
-              <span style={{ color: token.colorTextTitle, fontSize: '24px', fontWeight: '600' }}>JJApps</span>
+              <span style={{ color: token.colorTextTitle, fontSize: '22px', fontWeight: '600' }}>JJApps</span>
               <span style={{ display: 'block', marginTop: '0.5rem', color: token.colorText }}>
                 A microservice integration and deployment solution.Easily integrate any microservice and component.
               </span>

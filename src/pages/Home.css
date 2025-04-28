@@ -83,3 +83,60 @@
     color: white;
     margin-right: 8px;
 }
+
+.dynamic {
+    line-height: 2;
+    padding: 4rem 2rem;
+    margin: -2rem;
+    background: #ffffff;
+    color: #000000;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.dynamic::after {
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #222222;
+    color: #ffffff;
+    z-index: -1;
+    clip-path: circle(0% at 80% 50%);
+    transition: clip-path 0.75s ease-in-out;
+}
+
+.dynamic:hover::after {
+    width: 100%;
+    clip-path: circle(150% at 80% 50%);
+    transition: clip-path 1.5s ease;
+}
+
+.dynamic .ant-typography {
+    color: #ffffff;
+    transition: color 0.5s ease;
+    display: none;
+    margin-top: 1rem!important;
+}
+
+.dynamic:hover .ant-typography {
+    color: #ffffff;
+    transition: color 0.5s ease;
+    display: block;
+}
+
+.dynamic:hover .ant-typography.hide1, .dynamic:hover .ant-typography.hide2 {
+    color: #222222;
+    transition: color 0.5s ease;
+    display: none;
+    margin-top: 1rem!important;
+}
+
+.dynamic .ant-typography.hide1, .dynamic .ant-typography.hide2 {
+    color: #222222;
+    transition: color 0.5s ease;
+    display: block;
+}

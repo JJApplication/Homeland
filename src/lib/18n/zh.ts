@@ -54,5 +54,7 @@ export default {
     line2: '一个编程语言杂食者：品鉴Golang、Python、Javascript、Rust以及更多',
     line3: '我们的愿景',
     line4: '写我所想，做我所爱，让生活更加精彩有趣！',
+    hide1: '我们的目标是什么？',
+    hide2: '星辰大海？还是...？'
   }
 }

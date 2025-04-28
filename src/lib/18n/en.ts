@@ -28,12 +28,12 @@ export default {
   facebook: 'My Facebook',
   thanks: 'Special thanks to Michael Zhang for the translation work',
 
-  site1: 'wordpress - first site 2017-09-01',
-  site2: 'register domain lrenj.top 2018',
-  site3: 'write site with Flask 2019',
-  site4: 'register domain renj.io 2020',
-  site5: 'switch tech. to go&react 2020',
-  site6: 'what you see now 2022',
+  site1: 'Wordpress - first site 2017-09-01',
+  site2: 'Register domain lrenj.top 2018',
+  site3: 'Write site with Flask 2019',
+  site4: 'Register domain renj.io 2020',
+  site5: 'Switch technology stack to go&react 2020',
+  site6: 'What you see now 2022',
 
   work1: 'HuaZhong University of sci&tech 2016-2020',
   work2: 'CETC 41 (intern) 2019',
@@ -54,5 +54,7 @@ export default {
     line2: 'A omnivore of programming languages: tasting Golang, Python, Javascript, Rust and more.',
     line3: 'Our goals',
     line4: 'Write what I think, do what I love, and make life more wonderful and interesting!',
+    hide1: 'What\'s our goals?',
+    hide2: 'Is our goal the stars and the sea? Or...?',
   }
 }

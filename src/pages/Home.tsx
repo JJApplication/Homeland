@@ -1,19 +1,19 @@
 import Layout from '../components/Layout';
 import utilStyles from '../styles/utils.module.css';
-import { QRCode, theme, Divider, Col, Row, Button, Timeline, message, Card, List, Typography, Flex } from 'antd';
+import { QRCode, theme, Col, Row, Button, Timeline, Card, List, Typography } from 'antd';
 import styles from '../components/layout.module.css';
 import profile from '../assets/profile.jpg';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import useTypewriter from '../lib/typer';
 import TimelineSite from '../lib/timeline_site';
 import TimelineWork from '../lib/timeline_work';
 import './Home.css';
-import { getMode, themeToken } from '../lib/theme';
 import { i18n } from '../lib/18n/18n';
 import links from '../lib/links';
 import list from '../lib/list';
 import { Footer } from "../components/Footer";
 import Projects from "../components/Projects";
+import { getMode, themeToken } from '../lib/theme';
 
 const welcomeText =
   '$ 🐼 Hello, my name is Landers<br>' +
@@ -24,32 +24,18 @@ const welcomeText =
 // 首页
 export default function Home() {
   const { Title, Paragraph, Text, Link } = Typography;
-  const [messageApi, contextHolder] = message.useMessage();
   const [token, setToken] = useState(themeToken(getMode()));
-  const thanks = () => {
-    messageApi.info("Hello, I'm Landers!");
-  };
 
-  useEffect(() => {
-    const themeOnEvent = () => {
-      if (themeToken(getMode())['colorBgBanner'] !== token['colorBgBanner']) {
-        setToken(themeToken(getMode()));
-      }
-    };
-    window.addEventListener('click', themeOnEvent);
-
-    return () => {
-      window.removeEventListener('click', themeOnEvent);
-    };
-  }, [token]);
+  const changeTheme = (mode: string) => {
+    setToken(themeToken(mode));
+  }
 
   return (
-    <Layout home>
+    <Layout home changeThemeCall={changeTheme}>
       <header className={`${styles.header} grid`} style={{ backgroundImage: token.imageBgBanner }}>
-        {contextHolder}
         <div className="photo-container">
           <div className="photo-shutter">
-            <img src={profile} height={256} width={256} onClick={thanks} alt="profile" />
+            <img src={profile} height={256} width={256} alt="profile" />
           </div>
         </div>
         <h1 className={utilStyles.heading2Xl}>{i18n('slogan')}</h1>
@@ -100,14 +86,21 @@ export default function Home() {
             </Paragraph>
           </section>
           <Projects token={token} />
-          <section className={utilStyles.headingMd} style={{ margin: '1rem 0' }}>
-            <Title className={`${utilStyles.font125} ${utilStyles.fontBold}`} style={{ color: token.colorTextTitle }}>
-              {i18n('projects.line3')}
-            </Title>
-            <Paragraph className={utilStyles.font100}>
-              {i18n('projects.line4')}
-            </Paragraph>
-          </section>
+            <section className={'dynamic'}>
+              <Title className={`${utilStyles.font150} ${utilStyles.fontBold} hide1`}>
+                {i18n('projects.hide1')}
+              </Title>
+              <Title className={`${utilStyles.font150} ${utilStyles.fontBold}`}>
+                {i18n('projects.line3')}
+              </Title>
+              <Paragraph className={`${utilStyles.font100} hide2`}>
+                {i18n('projects.hide2')}
+              </Paragraph>
+              <Paragraph className={utilStyles.font100}>
+                {i18n('projects.line4')}
+              </Paragraph>
+            </section>
+
         </div>
         <div className={'home-content-item'}>
           <Title className={`${utilStyles.font125} ${utilStyles.fontBold}`} style={{ color: token.colorTextTitle }}>
@@ -192,11 +185,11 @@ export default function Home() {
             <Row className="ant-over">
               <Col className="ant-over" span={12} md={12} xs={24} sm={24}>
                 <h3>{i18n('timeline')}</h3>
-                <Timeline className="ant-over" style={{ fontWeight: 'bold' }} items={TimelineSite} />
+                <Timeline className="ant-over" items={TimelineSite} />
               </Col>
               <Col className="ant-over" span={12} md={12} xs={24} sm={24}>
                 <h3>{i18n('work')}</h3>
-                <Timeline className="ant-over" style={{ fontWeight: 'bold' }} items={TimelineWork} />
+                <Timeline className="ant-over" items={TimelineWork} />
               </Col>
             </Row>
           </section>

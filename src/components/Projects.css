@@ -22,8 +22,8 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     margin-left: -1rem;
     margin-top: -1rem;
     margin-bottom: -1rem;
@@ -31,23 +31,24 @@
 }
 
 .projects-container-content .logo{
-    width: 108px;
-    height: 108px;
+    width: 84px;
+    height: 84px;
     border-radius: 50%;
     cursor: pointer;
+    transition: transform 0.4s ease-out;
 }
 
 .projects-container-content .logo:hover{
-    transform: scale(1.2);
+    transform: scale(1.15);
     transform-origin: center center;
-    transition: transform 0.35s ease;
+    transition: transform 0.4s ease;
 }
 
 
 .projects-container-content .content {
     display: inline-flex;
     font-size: 16px;
-    width: calc(100% - 320px);
+    width: calc(100% - 280px);
     flex-wrap: wrap;
     margin-top: -1rem;
     margin-bottom: -1rem;
@@ -57,8 +58,8 @@
 
 .projects-container-content .link {
     display: inline-flex;
-    width: 120px;
-    font-size: 30px;
+    width: 100px;
+    font-size: 24px;
     color: #989898;
     cursor: pointer;
     margin-left: 1rem;
@@ -68,6 +69,6 @@
 
 .projects-container-content .link:hover {
     color: #2f2f2f;
-    font-size: 34px;
+    font-size: 32px;
     transition: all 0.3s ease;
 }

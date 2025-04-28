@@ -5,12 +5,11 @@ import { Divider, Image, Typography } from "antd";
 import React from "react";
 import { i18n } from "../lib/18n/18n";
 import links from "../lib/links";
-import me from '../assets/me.jpg';
+import me from '../assets/about.jpg';
 
-const logoStyle = {width: 128, display: 'inline-block', margin: '0.5rem', borderRadius: '50%'}
 // 首页
 export default function About() {
-  const { Title, Paragraph, Text, Link } = Typography;
+  const { Title, Paragraph } = Typography;
 
   return (
     <Layout>

@@ -1,11 +1,11 @@
 import { Flex, Menu, MenuProps } from 'antd';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { i18n } from '../lib/18n/18n';
 import links from '../lib/links';
 import Logo from '../assets/logo_light.png';
 import LogoDark from '../assets/logo_dark.png';
 import './Header.css';
-import { getMode, ThemeMode, themeToken } from '../lib/theme';
+import { ThemeMode } from '../lib/theme';
 import { GithubOutlined } from '@ant-design/icons';
 
 const items: MenuProps['items'] = [
@@ -144,25 +144,7 @@ const styles = {
   background: 'transparent',
 };
 
-export default function Header() {
-  const [mode, setMode] = useState(getMode());
-  const [token, setToken] = useState(themeToken(getMode()));
-  useEffect(() => {
-    const themeOnEvent = () => {
-      if (mode !== getMode()) {
-        setMode(getMode());
-      }
-      if (themeToken(getMode())['colorBgBanner'] !== token['colorBgBanner']) {
-        setToken(themeToken(getMode()));
-      }
-    };
-    window.addEventListener('click', themeOnEvent);
-
-    return () => {
-      window.removeEventListener('click', themeOnEvent);
-    };
-  }, [mode]);
-
+export default function Header({mode, token}: {mode: string; token?: any}) {
   const getLogo = () => {
     switch (mode) {
       case ThemeMode.Light: {
