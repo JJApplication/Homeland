@@ -30,6 +30,8 @@
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react-swc": "^3.0.0",
     "typescript": "^4.9.3",
+    "unplugin-auto-import": "^19.1.2",
+    "unplugin-auto-import-antd": "^0.0.2",
     "vite": "^4.1.0"
   }
 }

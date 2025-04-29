@@ -6,7 +6,11 @@ import Header from "./Header";
 import { getMode, ThemeMode, themeToken, updateMode } from "../lib/theme";
 import { updateI18n } from "../lib/18n/18n";
 
-export default function Layout({ children, home, changeThemeCall }: {
+
+const Layout = React.memo(LayoutInner)
+export default Layout;
+
+function LayoutInner({ children, home, changeThemeCall }: {
   children: React.ReactNode
   home?: boolean
   changeThemeCall?: Function

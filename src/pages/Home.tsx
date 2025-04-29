@@ -1,9 +1,9 @@
 import Layout from '../components/Layout';
 import utilStyles from '../styles/utils.module.css';
-import { QRCode, theme, Col, Row, Button, Timeline, Card, List, Typography } from 'antd';
+import { Col, Row, Button, Timeline, Card, List, Typography, QRCode } from 'antd';
 import styles from '../components/layout.module.css';
 import profile from '../assets/profile.jpg';
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import useTypewriter from '../lib/typer';
 import TimelineSite from '../lib/timeline_site';
 import TimelineWork from '../lib/timeline_work';
@@ -21,18 +21,27 @@ const welcomeText =
   `$ 👀 View my site on <a href=${links.page}>${links.page}</a><br>` +
   `$ 📧 Mail to me [Gmail] <a href=mailto:${links.mail}>${links.mail}</a>`;
 
+const data = performance.now()
 // 首页
 export default function Home() {
   const { Title, Paragraph, Text, Link } = Typography;
   const [token, setToken] = useState(themeToken(getMode()));
+  const [loadTime, setLoadTime] = useState(0);
 
   const changeTheme = (mode: string) => {
     setToken(themeToken(mode));
   }
 
+  useEffect(() => {
+    const endTime = performance.now() - data;
+    setLoadTime(Math.trunc(endTime));
+  }, []);
+
+
   return (
     <Layout home changeThemeCall={changeTheme}>
       <header className={`${styles.header} grid`} style={{ backgroundImage: token.imageBgBanner }}>
+        <p className={'load'}><span className={'load-title'}>&lt;app /&gt; loaded in</span>{ loadTime }ms</p>
         <div className="photo-container">
           <div className="photo-shutter">
             <img src={profile} height={256} width={256} alt="profile" />
