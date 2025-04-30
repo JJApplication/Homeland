@@ -3,7 +3,7 @@ import utilStyles from '../styles/utils.module.css';
 import { Col, Row, Button, Timeline, Card, List, Typography, QRCode } from 'antd';
 import styles from '../components/layout.module.css';
 import profile from '../assets/profile.jpg';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import useTypewriter from '../lib/typer';
 import TimelineSite from '../lib/timeline_site';
 import TimelineWork from '../lib/timeline_work';

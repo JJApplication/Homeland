@@ -2,7 +2,7 @@
 import './Projects.css';
 import imghost from '../assets/projects/imghost.jpg';
 import blog from '../assets/projects/blog.png';
-import apollo from '../assets/projects/apollo.png';
+import apollo from '../assets/projects/apollo.jpg';
 import jjapp from '../assets/projects/jjapp.png';
 import { GithubFilled, DownloadOutlined, LinkOutlined } from '@ant-design/icons';
 import links from '../lib/links';
