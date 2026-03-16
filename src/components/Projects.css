@@ -11,11 +11,40 @@
 
 .projects-container-content .row{
     display: flex;
+    align-items: center;
     padding: 1rem;
     margin-left: -2rem;
     margin-right: -2rem;
     border-bottom: 1px solid rgba(20, 20, 20, 0.1);
+    background: linear-gradient(90deg, rgba(36, 177, 0, 0.04), rgba(0, 112, 243, 0.03), rgba(255, 255, 255, 0));
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
+}
+
+.projects-container-content .row::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(36, 177, 0, 0.18), rgba(0, 112, 243, 0.12), rgba(255, 255, 255, 0));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.projects-container-content .row:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.projects-container-content .row:hover::after{
+    opacity: 1;
+}
+
+.projects-container-content .row > div{
+    position: relative;
+    z-index: 1;
 }
 
 .projects-container-content .logo-wrapper{
@@ -49,7 +78,7 @@
 .projects-container-content .content {
     display: inline-flex;
     font-size: 16px;
-    width: calc(100% - 280px);
+    flex: 1;
     flex-wrap: wrap;
     margin-top: -1rem;
     margin-bottom: -1rem;
@@ -59,12 +88,11 @@
 
 .projects-container-content .link {
     display: inline-flex;
-    width: 120px;
-    font-size: 22px;
+    width: 64px;
+    font-size: 24px;
     color: #989898;
     cursor: pointer;
-    margin-left: 1rem;
-    justify-content: space-around;
+    justify-content: center;
     transition: all 0.3s ease;
 }
 

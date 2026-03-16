@@ -151,3 +151,41 @@
   transition: color 0.5s ease;
   display: block;
 }
+
+.find-list {
+  margin-top: 1.25rem;
+  border: 1px solid rgba(20, 20, 20, 0.12);
+  background: linear-gradient(135deg, rgba(10, 10, 10, 0.02), rgba(0, 112, 243, 0.04));
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.find-list .ant-list-header {
+  border-bottom: 1px dashed rgba(20, 20, 20, 0.2);
+  background: linear-gradient(90deg, rgba(36, 177, 0, 0.08), rgba(0, 112, 243, 0.08));
+}
+
+.find-list-title {
+  font-family: 'monospace', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  letter-spacing: 0.02em;
+  margin: 0;
+  margin-bottom: 0!important;
+}
+
+.find-list-item {
+  padding: 0.75rem 1rem;
+  transition: all 0.25s ease;
+}
+
+.find-list-item a {
+  color: #24b100;
+  font-family: 'monospace', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  text-shadow: 0 0 8px rgba(36, 177, 0, 0.2);
+}
+
+.find-list-item:hover {
+  background: linear-gradient(90deg, rgba(36, 177, 0, 0.12), rgba(0, 112, 243, 0.08));
+}
+
+.find-list-item:hover a {
+  color: #0c64ff;
+}

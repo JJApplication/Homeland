@@ -3,7 +3,7 @@ export default {
   project: '项目',
   pages: '页面',
   about: '关于',
-  slogan: 'E4 BD A0 E5 A5 BD E9 99 B4 E7 94 9F E4 BA BA',
+  slogan: '米其林非官方认证大厨, 编程爱好者, AI严厉的父亲',
   welcome1: '你好，我是Landers',
   welcome2: '一个软件工程师 & 安全测试工程师。',
   cv: '简历',

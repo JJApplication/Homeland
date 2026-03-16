@@ -172,13 +172,13 @@ export default function Home() {
           </Row>
           <List
             bordered
-            className="ant-over"
-            header={<Title level={5}>🌍{i18n('find')}</Title>}
+            className="ant-over find-list"
+            header={<Title level={5} className="find-list-title">🌍{i18n('find')}</Title>}
             dataSource={list}
             split
             renderItem={item => {
               return (
-                <List.Item>
+                <List.Item className="find-list-item">
                   <a href={item.url}>{item.title}</a>
                 </List.Item>
               );

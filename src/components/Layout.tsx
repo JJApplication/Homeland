@@ -63,7 +63,7 @@ function LayoutInner({ children, home, changeThemeCall }: {
     <ConfigProvider theme={{token: themeToken(useTheme)}}>
       <div style={{ backgroundColor: globalBg, height: '100%', overflowY: 'auto' }}>
         <div style={{ paddingBottom: '2rem', maxWidth: '1024px', margin: '0 auto' }}>
-          <div>
+          <div style={{ position: 'fixed', zIndex: 9999 }}>
             <>
               <FloatButton data-id='themeSwitch' icon={<TranslationOutlined />} type="default" style={{ right: 32 }} onClick={changeI18n} />
               <FloatButton icon={renderThemeButton()} type="primary" style={{ right: 96 }} onClick={changeTheme}/>

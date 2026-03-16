@@ -4,7 +4,7 @@ import imghost from '../assets/projects/imghost.jpg';
 import blog from '../assets/projects/blog.png';
 import apollo from '../assets/projects/apollo.jpg';
 import jjapp from '../assets/projects/jjapp.png';
-import { GithubFilled, DownloadOutlined, LinkOutlined } from '@ant-design/icons';
+import { GithubFilled } from '@ant-design/icons';
 import links from '../lib/links';
 
 export default function Projects({ token }) {
@@ -25,12 +25,6 @@ export default function Projects({ token }) {
             </p>
           </div>
           <div className={'link'}>
-            <DownloadOutlined
-              onClick={() => {
-                open(`${links.imghost_github}/archive/refs/heads/master.zip`);
-              }}
-            />
-            <LinkOutlined />
             <GithubFilled
               onClick={() => {
                 open(links.imghost_github);
@@ -51,16 +45,6 @@ export default function Projects({ token }) {
             </p>
           </div>
           <div className={'link'}>
-            <DownloadOutlined
-              onClick={() => {
-                open(`${links.blog_github}/archive/refs/heads/master.zip`);
-              }}
-            />
-            <LinkOutlined
-              onClick={() => {
-                open(links.blog);
-              }}
-            />
             <GithubFilled
               onClick={() => {
                 open(links.blog_github);
@@ -81,16 +65,6 @@ export default function Projects({ token }) {
             </p>
           </div>
           <div className={'link'}>
-            <DownloadOutlined
-              onClick={() => {
-                open(`${links.apollo_github}/archive/refs/heads/master.zip`);
-              }}
-            />
-            <LinkOutlined
-              onClick={() => {
-                open(links.apollo);
-              }}
-            />
             <GithubFilled
               onClick={() => {
                 open(links.apollo_github);
@@ -111,16 +85,6 @@ export default function Projects({ token }) {
             </p>
           </div>
           <div className={'link'}>
-            <DownloadOutlined
-              onClick={() => {
-                open(`${links.jjapps_github}/archive/refs/heads/master.zip`);
-              }}
-            />
-            <LinkOutlined
-              onClick={() => {
-                open(links.jjapps);
-              }}
-            />
             <GithubFilled
               onClick={() => {
                 open(links.jjapps_github);

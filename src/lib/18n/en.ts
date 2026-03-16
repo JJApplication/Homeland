@@ -3,7 +3,7 @@ export default {
   project: 'Project',
   pages: 'Pages',
   about: 'About',
-  slogan: 'E4 BD A0 E5 A5 BD E9 99 B4 E7 94 9F E4 BA BA',
+  slogan: 'An unofficial Michelin-certified chef, a programming enthusiast, and AI\'s strict father',
   welcome1: 'Hello, I\'m Landers',
   welcome2: 'A developer and Security engineer.',
   cv: 'CV',
