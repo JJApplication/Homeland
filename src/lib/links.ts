@@ -16,4 +16,6 @@ export default {
   apollo: 'https://service.renj.io',
   jjapps_github: 'https://github.com/jjapplication',
   jjapps: 'https://jjapp.dev',
+  hamburger_github: 'https://github.com/jjapplication/hamburger',
+  hamburger: 'https://hamburger.renj.io',
 }

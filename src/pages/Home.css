@@ -165,7 +165,6 @@
 }
 
 .find-list-title {
-  font-family: 'monospace', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
   letter-spacing: 0.02em;
   margin: 0;
   margin-bottom: 0!important;
@@ -178,7 +177,6 @@
 
 .find-list-item a {
   color: #24b100;
-  font-family: 'monospace', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
   text-shadow: 0 0 8px rgba(36, 177, 0, 0.2);
 }
 

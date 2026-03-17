@@ -90,7 +90,7 @@ const items: MenuProps['items'] = [
       {
         label: (
           <a href="http://service.renj.io" target="_blank" rel="noopener noreferrer">
-            Apollo
+            Apollo Service
           </a>
         ),
         key: '@http://service.renj.io',
@@ -102,6 +102,14 @@ const items: MenuProps['items'] = [
           </a>
         ),
         key: '@http://doc.renj.io',
+      },
+            {
+        label: (
+          <a href="http://hamburger.renj.io" target="_blank" rel="noopener noreferrer">
+            Hamburger Gateway
+          </a>
+        ),
+        key: '@http://hamburger.renj.io',
       },
       {
         label: (

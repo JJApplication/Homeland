@@ -173,7 +173,7 @@ export default function Home() {
           <List
             bordered
             className="ant-over find-list"
-            header={<Title level={5} className="find-list-title">🌍{i18n('find')}</Title>}
+            header={<Title level={5} className="find-list-title">{i18n('find')}</Title>}
             dataSource={list}
             split
             renderItem={item => {

@@ -56,5 +56,10 @@ export default {
     line4: 'Write what I think, do what I love, and make life more wonderful and interesting!',
     hide1: 'What\'s our goals?',
     hide2: 'Is our goal the stars and the sea? Or...?',
+    imghost_desc: 'A lightweight personal image hosting service',
+    blog_desc: 'Blog generator driven by Markdown',
+    apollo_desc: 'A cloud-native modular microservice integration and deployment tool',
+    jjapps_desc: 'A microservice integration and deployment solution that easily integrates any service and component.',
+    hamburger_desc: 'A modern high-performance gateway and proxy orchestration platform.'
   }
 }

@@ -55,6 +55,11 @@ export default {
     line3: '我们的愿景',
     line4: '写我所想，做我所爱，让生活更加精彩有趣！',
     hide1: '我们的目标是什么？',
-    hide2: '星辰大海？还是...？'
+    hide2: '星辰大海？还是...？',
+    imghost_desc: '轻量级个人图床服务',
+    blog_desc: '由 Markdown 驱动的博客生成器',
+    apollo_desc: '云原生模块化微服务集成与部署工具',
+    jjapps_desc: '微服务集成与部署解决方案，轻松整合各类微服务与组件',
+    hamburger_desc: '现代化高性能网关与代理编排平台'
   }
 }
